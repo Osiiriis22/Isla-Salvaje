@@ -2,15 +2,18 @@
 
 Prototipo de supervivencia para navegador, con arte pixelado inspirado en juegos de aventura de 16 bits.
 
-## Probar
+## Probar localmente
 
 - Abre index.html con Brave, Chrome o Edge.
 - Usa WASD o las flechas para moverte.
-- Acércate a los árboles, rocas y fogata para interactuar. En la fogata puedes descansar o abrir el menú de cocina.
+- Acércate a árboles, rocas y fogata para interactuar. En la fogata puedes descansar o abrir el menú de cocina.
 - La mochila se abre con I, el crafteo con C y L oculta el panel lateral.
 - Admin es un modo local de pruebas; todavía no hay cuentas ni servidor multijugador.
-- Mantén los tres archivos PNG junto a index.html.
+- Mantén gba-walk-sheet.png, tree-states.png y rock-states.png junto a index.html.
 
-## Publicar
+## Publicar como página web
 
-Este proyecto es una página estática. En GitHub Pages, configúrala para servir index.html desde la raíz del repositorio.
+1. En GitHub, abre Settings → Pages.
+2. En Build and deployment → Source, selecciona GitHub Actions.
+3. Espera a que termine el flujo “Publicar Isla Salvaje” en la pestaña Actions.
+4. El juego quedará publicado en https://osiiriis22.github.io/Isla-Salvaje/.
