@@ -21,10 +21,6 @@ jobs:
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
-          path: |
-            index.html
-            gba-walk-sheet.png
-            tree-states.png
-            rock-states.png
+          path: .
       - id: deployment
         uses: actions/deploy-pages@v4
