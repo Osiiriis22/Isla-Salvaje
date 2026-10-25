@@ -2,21 +2,24 @@
 
 Prototipo de supervivencia para navegador, con arte pixelado de aventura.
 
-## Jugar y editar
+## Jugar y crear
 
 - Abre index.html para jugar.
-- Abre editor.html para pintar mapas, importar sprites PNG, guardar proyectos JSON o descargar imágenes.
-- Las paletas de colores pueden importarse en formato GPL, PAL, HEX, TXT o JSON.
-- Los proyectos del editor guardan dentro del JSON los sprites importados.
+- editor.html permite pintar mapas, importar sprites PNG, guardar proyectos JSON o descargar imágenes.
+- asset-creator.html permite dibujar sprites, NPC y animales animados en cuatro direcciones; también permite crear casas y otros edificios.
+- Los personajes y animales pueden usar 3, 4, 6 u 8 cuadros de animación por dirección.
+- El PNG exportado es una hoja de sprites con filas en orden abajo, izquierda, derecha y arriba.
 
-## Recursos del juego
+## Carpetas de recursos
 
-- assets/maps: proyectos de mapas exportados desde el editor y el manifiesto de mapas.
+- assets/maps: proyectos de mapa exportados desde el editor.
 - assets/sprites: personajes, árboles, rocas, herramientas y muebles.
-- assets/npcs: sprites y animaciones de personajes no jugadores.
+- assets/npcs: hojas de personajes no jugadores.
+- assets/animals: sprites y animaciones de animales.
+- assets/buildings: casas, refugios y otros edificios.
 - assets/tilesets: conjuntos de cuadros de terreno.
 
-Las carpetas organizan los recursos dentro del proyecto. El juego todavía debe conectarse al manifiesto para cargar mapas automáticamente; por ahora, los proyectos se guardan aquí como archivos.
+Los mapas exportados se pueden guardar en assets/maps. La carga automática de mapas al iniciar el juego todavía requiere conectar el juego con esos archivos. Para recursos estáticos, el PNG se guarda en la carpeta correspondiente. El proyecto JSON del creador conserva los cuadros para seguir editándolos.
 
 ## Publicar
 
